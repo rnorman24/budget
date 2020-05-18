@@ -19,7 +19,7 @@ var UIController = (function () {
     getInput: function() {
       return {
         type: document.querySelector(DOMstrings.inputType).value, // Will be either inc or exp
-        decription: document.querySelector(DOMstrings.inputDescription).value,
+        description: document.querySelector(DOMstrings.inputDescription).value,
         value: document.querySelector(DOMstrings.inputValue).value
       };
       
