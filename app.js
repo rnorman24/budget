@@ -27,22 +27,17 @@ var controller = (function () {
   
     // 5. Display the budget on the UI
   
+    console.log('it works.');
   };
 
-  document.querySelector(".add__btn").addEventListener("click", function () {
-
-
-
-  });
+  document.querySelector(".add__btn").addEventListener("click", ctrlAddItem);
 
   document.addEventListener("keypress", function (event) {
 
     if (event.keyCode === 13 || event.which === 13) {
-
-      console.log("ENTER was pressed.");
-    
+      ctrlAddItem();    
     }
 
   });
-  
+
 })(budgetController, UIController);
