@@ -22,7 +22,7 @@ var UIController = (function () {
 })();
 
 // GLOBAL APP CONTROLLER
-var controller = (function () {
+var controller = (function (budgetCtrl, UICtrl) {
 
   var ctrlAddItem = function () {
   
