@@ -99,11 +99,11 @@ var UIController = (function () {
 
       // Replace the placeholder text with some actual data
       newHtml = html.replace('%id%', obj.id);
-      newHtml = html.replace('%description%', obj.description);
-      newHtml = html.replace('%value%', obj.value);
+      newHtml = newHtml.replace('%description%', obj.description);
+      newHtml = newHtml.replace('%value%', obj.value);
 
       // Insert the HTML into the DOM
-      document.querySelector(element).insertAdjacentElement('berforeend', newHtml);
+      document.querySelector(element).insertAdjacentHTML('beforeend', newHtml);
 
     },
 
@@ -138,6 +138,7 @@ var controller = (function (budgetCtrl, UICtrl) {
     newItem = budgetCtrl.addItem(input.type, input.description, input.value);
   
     // 3. Add the item to the UI
+    UICtrl.addListItem(newItem, input.type);
   
     // 4. Calculate the budget
   
