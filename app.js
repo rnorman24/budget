@@ -117,6 +117,8 @@ var UIController = (function () {
       fieldsArr.forEach(function(current, index, array) {
         current.value = "";
       });
+      // Set cursor back to desciption field
+      fieldsArr[0].focus();
 
     },
 
