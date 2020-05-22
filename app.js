@@ -78,7 +78,7 @@ var UIController = (function () {
       return {
         type: document.querySelector(DOMstrings.inputType).value, // Will be either inc or exp
         description: document.querySelector(DOMstrings.inputDescription).value,
-        value: document.querySelector(DOMstrings.inputValue).value
+        value: parseFloat(document.querySelector(DOMstrings.inputValue).value)
       };
       
     },
@@ -167,6 +167,8 @@ var controller = (function (budgetCtrl, UICtrl) {
 
     // 4. Clear the input fields
     UICtrl.clearFields();
+
+    // 5. Calculate and update budget
   
   };
 
