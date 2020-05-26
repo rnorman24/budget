@@ -246,13 +246,15 @@ var controller = (function (budgetCtrl, UICtrl) {
   };
 
   var ctrlDeleteItem = function(event) {
-    var itemID, splitID;
+    var itemID, splitID, type, ID;
 
     itemID = event.target.parentNode.parentNode.parentNode.parentNode.id;
 
     if (itemID) {
       //inc-1
       splitID = itemID.split('-');
+      type = splitID[0];
+      ID = splitID[1];
     }
   };
 
