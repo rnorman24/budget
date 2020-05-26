@@ -275,7 +275,7 @@ var controller = (function (budgetCtrl, UICtrl) {
       ID = splitID[1];
 
       // 1. Delete the item from the data structure
-
+      budgetCtrl.deleteItem(type, id);
       // 2. Delete the item from the UI
 
       // 3. Update and show the new budget
