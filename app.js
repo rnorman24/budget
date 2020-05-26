@@ -178,7 +178,7 @@ var UIController = (function () {
       document.querySelector(DOMstrings.expensesLabel).textContent = obj.totalExp;
       
       if (obj.percentage > 0) {
-        document.querySelector(DOMstrings.percentageLabel).textContent = obj.percentage;
+        document.querySelector(DOMstrings.percentageLabel).textContent = obj.percentage + '%';
       } else {
         document.querySelector(DOMstrings.percentageLabel).textContent = '---';
       }
