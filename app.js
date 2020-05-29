@@ -300,7 +300,7 @@ var UIController = (function () {
       // var christmas = new Date(2016, 11, 25);
 
       year = now.getFullYear;
-    }
+    },
 
     getDOMstrings: function() {
       return DOMstrings;
