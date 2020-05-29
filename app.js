@@ -281,10 +281,12 @@ var UIController = (function () {
 
       int = numSplit[0];
       if (int.length > 3) {
-        int = int.substr(0, 1) + ',' + int.substr(1, 3); //input 2310, output 2,310
+        int = int.substr(0, int.length - 3) + ',' + int.substr(int.length - 3, 3); //input 23510, output 23,510
       }
 
       dec = numSplit[1];
+
+      return (type === 'exp' ? sign = '-' : sign = '+') + ' ' + int + dec;
 
     },
 
