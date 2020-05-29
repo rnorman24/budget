@@ -255,7 +255,6 @@ var UIController = (function () {
       };
 
       nodeListForEach(fields, function(current, index) {
-
         if (percentages[index] > 0) {
           current.textContent = percentages[index] + '%';
         } else {
@@ -308,7 +307,7 @@ var controller = (function (budgetCtrl, UICtrl) {
     var percentages = budgetCtrl.getPercentages();
 
     // 3. Update the UI with the new percentages
-    console.log(percentages);
+    UICtrl.displayPercentages();
   }
   
   var ctrlAddItem = function () {
