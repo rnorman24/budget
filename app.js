@@ -328,6 +328,8 @@ var controller = (function (budgetCtrl, UICtrl) {
     });
 
     document.querySelector(DOM.container).addEventListener('click', ctrlDeleteItem);
+
+    document.querySelector(DOM.inputType).addEventListener('chage', UICtrl.changeType);
   };
 
   var updateBudget = function() {
