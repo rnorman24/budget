@@ -293,6 +293,12 @@ var UIController = (function () {
       });
     },
 
+    displayMonth: function() {
+
+      var now = new Date();
+      // var christmas = new Date(2016, 11, 25);
+    }
+
     getDOMstrings: function() {
       return DOMstrings;
     }
