@@ -261,7 +261,22 @@ var UIController = (function () {
           current.textContent = '---';
         }
       });
-    }, 
+    },
+
+    formatNumber: function(num, type) {
+
+      /*
+      + or - before number
+      exactly 2 decimal points
+      comma separating the thousands
+
+      2310.4567 -> 2,310.46
+      2000 -> + 2,000.00
+      */
+
+      num = Math.abs(num);
+      num = num.toFixed(2);
+    },
 
     getDOMstrings: function() {
       return DOMstrings;
