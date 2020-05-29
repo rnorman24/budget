@@ -280,9 +280,12 @@ var UIController = (function () {
       numSplit = num.split('.');
 
       int = numSplit[0];
+      if (int.length > 3) {
+        int = int.substr(0, 1) + ',' + int.substr(1, 3); //input 2310, output 2,310
+      }
 
       dec = numSplit[1];
-      
+
     },
 
     getDOMstrings: function() {
