@@ -294,9 +294,12 @@ var UIController = (function () {
     },
 
     displayMonth: function() {
+      var now, year;
 
-      var now = new Date();
+      now = new Date();
       // var christmas = new Date(2016, 11, 25);
+
+      year = now.getFullYear;
     }
 
     getDOMstrings: function() {
