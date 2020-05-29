@@ -264,7 +264,7 @@ var UIController = (function () {
     },
 
     formatNumber: function(num, type) {
-
+      var numSplit;
       /*
       + or - before number
       exactly 2 decimal points
@@ -276,6 +276,8 @@ var UIController = (function () {
 
       num = Math.abs(num);
       num = num.toFixed(2);
+
+      numSplit = num.split('.');
     },
 
     getDOMstrings: function() {
