@@ -133,7 +133,7 @@ var budgetController = (function () {
       */
 
       data.allItems.exp.forEach(function(cur) {
-        cur.calcPercentage();
+        cur.calcPercentage(data.totals.inc);
       });
     },
 
